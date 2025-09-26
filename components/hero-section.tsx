@@ -3,9 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
-import { ArrowDown, Github, Linkedin, Mail, MapPin, Download } from 'lucide-react';
+import { ArrowDown, Linkedin, Mail, MapPin, Download } from 'lucide-react';
 import { profileData } from '@/data/mock-data';
 import Image from 'next/image';
+import { GithubIcon } from './icons';
 
 const HeroSection = () => {
     const [currentRole, setCurrentRole] = useState(0);
@@ -111,7 +112,7 @@ const HeroSection = () => {
                                 rel="noopener noreferrer"
                                 className="p-3 bg-white rounded-full shadow-md hover:shadow-lg border border-gray-200 hover:border-purple-300 transition-all duration-300 group"
                             >
-                                <Github className="w-6 h-6 text-gray-600 group-hover:text-purple-600 transition-colors duration-300" />
+                                <GithubIcon className="w-6 h-6 text-gray-600 group-hover:text-purple-600 transition-colors duration-300" />
                             </a>
                             <a
                                 title='Contact'

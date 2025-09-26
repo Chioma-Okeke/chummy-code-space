@@ -17,7 +17,7 @@ const AboutSection = () => {
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 items-center lg:items-start">
                     {/* Left - Story & Education */}
                     <div className="space-y-8">
                         <div>

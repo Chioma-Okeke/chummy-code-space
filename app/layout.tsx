@@ -15,13 +15,43 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Chioma Okeke",
-  description: "Chummy's code space. Learn more about Chioma Okeke",
+  description: "Chummy's code space. Chioma Okeke is a Full-stack Software Engineer focused on building inclusive and secured software applications.",
   authors: [
     {
       name: "Chioma Okeke",
-      url: "https://tolce-learning-hub.vercel.app/"
+      url: "https://chummy-code-space.vercel.app/"
     }
   ],
+  keywords: [
+    'Frontend Engineering',
+    'Backend Engineering',
+    'Full-stack Development',
+    'Software security',
+    'React.js',
+    'Next.js',
+    "JavaScript",
+    "TypeScript",
+    "Object-oriented programming",
+    "Data Structure and Algorithm"
+  ],
+  openGraph: {
+    type: 'website',
+    locale: 'en_NG',
+    url: 'https://chummy-code-space.vercel.app/',
+    siteName: 'Tolce Learning Hub',
+    title: 'Tolce Learning Hub',
+    description:
+      "Chummy's code space. Chioma Okeke is a Full-stack Software Engineer focused on building inclusive and secured software applications. Open to learn more about her journey",
+    images: [
+      {
+        url: "https://res.cloudinary.com/djrp3aaq9/image/upload/v1758915248/WhatsApp_Image_2025-09-13_at_00.35.40_6d6eeac2_pndl8i.jpg",
+        width: 1200,
+        height: 630,
+        alt: 'Chioma Okeke',
+      },
+    ],
+  },
+
 };
 
 export default function RootLayout({
