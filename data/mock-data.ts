@@ -13,9 +13,9 @@ export const profileData = {
         summary:
             "Passionate Full-Stack Developer with expertise in cybersecurity and a proven track record of delivering scalable enterprise solutions. Currently pursuing M.S. in Computer Science at Arizona State University while making impactful contributions at EdPlus, Arizona State University.",
         highlights: [
-            "Led frontend development achieving 20% faster performance and 30% user engagement improvement",
-            "Reduced critical usability issues by 40% and improved application stability by 15%",
-            "Mentored 90% of learners in advanced React concepts through She Code Africa",
+            "Awarded the highly competitive Mastercard Foundation Scholarship, selected from a pool of 6,000+ applicants for academic excellence and leadership potential",
+            "Spearheaded various frontend development projects using React and Next.js, optimizing rendering performance and reducing page load times by 20%, which contributed to a 30% boost in user engagement.",
+            "Mentored peers through She Code Africa, guiding learners in mastering advanced React concepts. 90% of participants reported increased confidence in building real-world applications.",
         ],
     },
 
@@ -142,7 +142,7 @@ export const profileData = {
         {
             id: 1,
             degree: "M.S. Computer Science",
-            major: "Cybersecurity",
+            major: "Software and System Security",
             school: "Arizona State University",
             location: "Tempe, AZ",
             duration: "Aug 2025 - May 2027",
@@ -157,11 +157,17 @@ export const profileData = {
         {
             id: 2,
             degree: "B.Eng. Computer Engineering",
+            major: "Computer Engineering",
             school: "Covenant University",
             location: "Ogun State, Nigeria",
             duration: "Aug 2017 - Aug 2022",
             gpa: "4.67/5.0 GPA",
-            coursework: [],
+            coursework: [
+                "Object-oriented Programming",
+                "Embedded Systems Engineering",
+                "Internet of Things",
+                "Smart Systems Engineering"
+            ],
         },
     ],
 
