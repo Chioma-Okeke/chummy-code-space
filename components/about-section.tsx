@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
-import { GraduationCap, Award, Target, Heart } from 'lucide-react';
+import { GraduationCap, Award, Heart } from 'lucide-react';
 import { profileData } from '@/data/mock-data';
 
 const AboutSection = () => {
@@ -41,7 +41,7 @@ const AboutSection = () => {
                                 <GraduationCap className="w-5 h-5 text-purple-600 mr-2" />
                                 Education
                             </h4>
-                            {profileData.education.map((edu, index) => (
+                            {profileData.education.map((edu) => (
                                 <Card key={edu.id} className="p-6 border-l-4 border-purple-400 hover:shadow-lg transition-shadow duration-300">
                                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
                                         <div>
@@ -93,7 +93,7 @@ const AboutSection = () => {
                         </div>
 
                         {/* Goals & Interests */}
-                        <div>
+                        {/* <div>
                             <h4 className="text-xl font-semibold text-gray-900 flex items-center mb-6">
                                 <Target className="w-5 h-5 text-purple-600 mr-2" />
                                 Goals & Interests
@@ -126,7 +126,7 @@ const AboutSection = () => {
                                     </div>
                                 </div>
                             </Card>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

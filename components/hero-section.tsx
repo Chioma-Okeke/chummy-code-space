@@ -5,6 +5,7 @@ import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { ArrowDown, Github, Linkedin, Mail, MapPin, Download } from 'lucide-react';
 import { profileData } from '@/data/mock-data';
+import Image from 'next/image';
 
 const HeroSection = () => {
     const [currentRole, setCurrentRole] = useState(0);
@@ -95,6 +96,7 @@ const HeroSection = () => {
 
                         <div className="flex justify-center lg:justify-start space-x-6">
                             <a
+                                title='LiknedIn'
                                 href={profileData.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -103,6 +105,7 @@ const HeroSection = () => {
                                 <Linkedin className="w-6 h-6 text-gray-600 group-hover:text-purple-600 transition-colors duration-300" />
                             </a>
                             <a
+                                title='Github'
                                 href={profileData.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -111,6 +114,7 @@ const HeroSection = () => {
                                 <Github className="w-6 h-6 text-gray-600 group-hover:text-purple-600 transition-colors duration-300" />
                             </a>
                             <a
+                                title='Contact'
                                 onClick={() => scrollToSection('#contact')}
                                 className="p-3 bg-white rounded-full shadow-md hover:shadow-lg border border-gray-200 hover:border-purple-300 transition-all duration-300 group"
                             >
@@ -123,11 +127,7 @@ const HeroSection = () => {
                     <div className="flex justify-center lg:justify-end">
                         <div className="relative">
                             <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl relative">
-                                <img
-                                    src={profileData.profileImage}
-                                    alt="Chioma Okeke"
-                                    className="w-full h-full object-cover object-top"
-                                />
+                                <Image alt='Chioma Okeke' src={profileData.profileImage} fill className='object-cover object-top' priority />
                                 <div className="absolute inset-0 bg-gradient-to-t from-purple-600/10 to-transparent"></div>
                             </div>
 

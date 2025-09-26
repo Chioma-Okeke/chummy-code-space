@@ -6,6 +6,7 @@ import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { ExternalLink, Github, Calendar, TrendingUp } from 'lucide-react';
 import { profileData } from '@/data/mock-data';
+import Image from 'next/image';
 
 const ProjectsSection = () => {
     const [hoveredProject, setHoveredProject] = useState<number | null>(null);
@@ -24,7 +25,7 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
-                    {profileData.projects.map((project, index) => (
+                    {profileData.projects.map((project) => (
                         <Card
                             key={project.id}
                             className={`group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${hoveredProject === project.id ? 'ring-2 ring-purple-400 ring-opacity-50' : ''
@@ -34,10 +35,11 @@ const ProjectsSection = () => {
                         >
                             {/* Project Image */}
                             <div className="relative overflow-hidden h-48">
-                                <img
+                                <Image
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    fill
+                                    className='object-cover transition-transform duration-700 group-hover:scale-110'
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
