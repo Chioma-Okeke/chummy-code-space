@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/button';
+import Image from 'next/image';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,18 +37,26 @@ const Header = () => {
 
     return (
         <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                ? 'bg-white/90 backdrop-blur-md shadow-lg border-b border-purple-100'
-                : 'bg-transparent'
+            ? 'bg-white/90 backdrop-blur-md shadow-lg border-b border-purple-100'
+            : 'bg-transparent'
             }`}>
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center py-4">
                     {/* Logo */}
                     <div className="flex-shrink-0">
                         <button
+                            title='Logo'
                             onClick={() => scrollToSection('#hero')}
                             className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-200"
                         >
-                            CO
+                            <div className="relative w-[45px] h-[45px] rounded-full">
+                                <Image
+                                    src="https://res.cloudinary.com/djrp3aaq9/image/upload/c_crop,w_350,h_350/v1758926887/Chummy-space_hpprii.png"
+                                    alt="Logo"
+                                    fill
+                                    className="object-cover rounded-full"
+                                />
+                            </div>
                         </button>
                     </div>
 

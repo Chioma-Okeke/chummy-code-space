@@ -13,7 +13,7 @@ const AboutSection = () => {
                         About <span className="bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">Me</span>
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                        My journey from Nigeria to Arizona, driven by passion for technology and commitment to creating impactful solutions.
+                        When I am not busy debugging lines of code, you will probably catch me binge-watching anime, re-watching my favorite movies, or laughing at my own bad jokes.
                     </p>
                 </div>
 
@@ -30,7 +30,7 @@ const AboutSection = () => {
                             </p>
                             <p className="text-gray-600 leading-relaxed">
                                 My journey began in Nigeria where I earned my Bachelor&apos;s degree in Computer Engineering from Covenant University
-                                with a 4.67/5.0 GPA. Today, I&apos;m pursuing my Master&apos;s in Computer Science with a focus on Cybersecurity at
+                                with a 4.67/5.0 GPA. Today, I&apos;m pursuing my Master&apos;s in Computer Science with a focus on Systems and Software Security at
                                 Arizona State University while working as a Web Application Developer Assistant.
                             </p>
                         </div>
@@ -43,7 +43,7 @@ const AboutSection = () => {
                             </h4>
                             {profileData.education.map((edu) => (
                                 <Card key={edu.id} className="p-6 border-l-4 border-purple-400 hover:shadow-lg transition-shadow duration-300">
-                                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
+                                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
                                         <div>
                                             <h5 className="font-semibold text-gray-900">{edu.degree}</h5>
                                             {edu.major && <p className="text-purple-600 font-medium">Major: {edu.major}</p>}

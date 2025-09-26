@@ -71,7 +71,7 @@ const HeroSection = () => {
                         </div>
 
                         <p className="text-lg text-gray-600 max-w-2xl leading-relaxed">
-                            Crafting scalable web applications and secure systems with expertise in React, Node.js, and Cybersecurity.
+                            Crafting scalable web applications and secure systems with expertise in React, Node.js, Salesforce.
                             Currently pursuing M.S. in Computer Science while making impactful contributions at EdPlus, Arizona State University.
                         </p>
 
