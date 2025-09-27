@@ -50,7 +50,7 @@ const ExperienceSection = () => {
                                         exit={{ opacity: 0 }}
                                         transition={{ duration: 0.5, ease: "easeInOut", delay: index / 10 }}
                                     >
-                                        <Card className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:mr-auto lg:pr-8' : 'lg:ml-auto lg:pl-8'} shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm`}>
+                                        <Card className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:mr-auto lg:ml-10 lg:pr-8' : 'lg:ml-auto lg:mr-10 lg:pl-8'} shadow-lg hover:shadow-xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm`}>
                                             <div className="p-6 space-y-4">
                                                 {/* Header */}
                                                 <div className="flex items-start justify-between">
@@ -114,7 +114,7 @@ const ExperienceSection = () => {
                                         </Card>
 
                                         {/* Role Badge */}
-                                        <div className={`hidden lg:block absolute top-4 ${index % 2 === 0 ? 'right-4' : 'left-4'
+                                        <div className={`hidden lg:block absolute top-4 ${index % 2 === 0 ? 'right-10' : 'left-10'
                                             }`}>
                                             <Badge
                                                 variant="secondary"
