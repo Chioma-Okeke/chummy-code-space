@@ -54,7 +54,7 @@ const ProjectsSection = () => {
                                     </div>
 
                                     {/* Overlay Links */}
-                                    <div className="absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                    <div className="max-lg:hidden absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
                                         {project.demoUrl && <Link
                                             href={project.demoUrl}
                                             target='_blank'
@@ -120,6 +120,25 @@ const ProjectsSection = () => {
                                                 +{project.achievements.length - 2} more achievements
                                             </p>
                                         )}
+                                    </div>
+
+                                    <div className="flex gap-3 lg:hidden">
+                                        {project.demoUrl && <Link
+                                            href={project.demoUrl}
+                                            target='_blank'
+                                            className="flex-1 py-2 px-4 border bg-white/90 hover:bg-white text-gray-900 backdrop-blur-sm flex items-center rounded-lg justify-center"
+                                        >
+                                            <ExternalLink className="w-3 h-3 mr-1" />
+                                            Demo
+                                        </Link>}
+                                        {project.githubUrl && <Link
+                                            href={project.githubUrl}
+                                            target='_blank'
+                                            className="flex-1 py-2 px-4 border border-purple-600 text-purple-600 hover:text-purple-700 hover:bg-purple-50  backdrop-blur-sm flex items-center rounded-lg justify-center"
+                                        >
+                                            <Github className="w-3 h-3 mr-1" />
+                                            Code
+                                        </Link>}
                                     </div>
                                 </div>
                             </Card>
