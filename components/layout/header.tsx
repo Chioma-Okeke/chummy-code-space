@@ -24,7 +24,6 @@ const Header = () => {
         { label: 'Projects', href: '#projects' },
         { label: 'Volunteer', href: '#volunteer' },
         { label: 'Blog', href: '#blog' },
-        { label: 'Contact', href: '#contact' }
     ];
 
     const scrollToSection = (href: string) => {
@@ -45,7 +44,8 @@ const Header = () => {
                     {/* Logo */}
                     <div className="flex-shrink-0">
                         <button
-                            title='Logo'
+                            title='Logo
+                            '
                             onClick={() => scrollToSection('#hero')}
                             className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-200"
                         >
@@ -66,7 +66,7 @@ const Header = () => {
                             <button
                                 key={index}
                                 onClick={() => scrollToSection(item.href)}
-                                className="text-gray-700 hover:text-purple-600 transition-colors duration-200 font-medium relative group"
+                                className="text-gray-700 hover:text-purple-600 transition-colors duration-200 font-medium relative group cursor-pointer"
                             >
                                 {item.label}
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-purple-400 group-hover:w-full transition-all duration-300"></span>

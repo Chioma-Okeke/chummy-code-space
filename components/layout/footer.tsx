@@ -4,16 +4,10 @@ import React from 'react';
 import { Heart, Code, Coffee } from 'lucide-react';
 import { profileData } from '@/data/mock-data';
 import { Separator } from '../ui/separator';
+import { scrollToSection } from '@/lib/utils';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-
-    const scrollToSection = (href: string) => {
-        const element = document.querySelector(href);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
 
     const quickLinks = [
         { label: 'About', href: '#about' },
@@ -42,7 +36,7 @@ const Footer = () => {
                                 Chioma Okeke
                             </h3>
                             <p className="text-gray-300 leading-relaxed mb-4">
-                                Full-Stack Developer & Cybersecurity Specialist passionate about creating secure,
+                                Full-Stack Developer & Software Security enthusiast passionate about creating secure,
                                 scalable applications and empowering the next generation of developers.
                             </p>
                             <p className="text-gray-400 text-sm">
@@ -54,6 +48,7 @@ const Footer = () => {
                         {/* Social Links */}
                         <div className="flex space-x-6">
                             <a
+                                title='LinkedIn Profile'
                                 href={profileData.linkedin}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -64,6 +59,7 @@ const Footer = () => {
                                 </svg>
                             </a>
                             <a
+                                title='Github Profile'
                                 href={profileData.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -74,6 +70,7 @@ const Footer = () => {
                                 </svg>
                             </a>
                             <a
+                                title='email address'
                                 href={`mailto:${profileData.email}`}
                                 className="text-gray-400 hover:text-purple-400 transition-colors duration-300"
                             >
@@ -92,7 +89,7 @@ const Footer = () => {
                                 <li key={index}>
                                     <button
                                         onClick={() => scrollToSection(link.href)}
-                                        className="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm"
+                                        className="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm cursor-pointer"
                                     >
                                         {link.label}
                                     </button>

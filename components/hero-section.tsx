@@ -116,7 +116,7 @@ const HeroSection = () => {
                             </a>
                             <a
                                 title='Contact'
-                                onClick={() => scrollToSection('#contact')}
+                                href={`mailto:${profileData.email}`}
                                 className="p-3 bg-white rounded-full shadow-md hover:shadow-lg border border-gray-200 hover:border-purple-300 transition-all duration-300 group"
                             >
                                 <Mail className="w-6 h-6 text-gray-600 group-hover:text-purple-600 transition-colors duration-300" />
