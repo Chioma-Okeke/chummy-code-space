@@ -34,12 +34,6 @@ const formSchema = z.object({
 type FormValues = z.infer<typeof formSchema>
 
 const ContactSection = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-    });
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const form = useForm<FormValues>({
@@ -51,31 +45,27 @@ const ContactSection = () => {
         },
     })
 
-    const onSubmit = (values: FormValues) => {
+    const onSubmit = async (values: FormValues) => {
         console.log("Form submitted:", values)
-        // You can replace this with API call
+        try {
+            setIsSubmitting(true)
+            await fetch("/api/contact", {
+                method: "POST",
+                body: JSON.stringify(values)
+            })
+            form.reset()
+            toast.success("Message Successfully Sent", {
+                description: "Thank you for your message. I will get back to you soon."
+            })
+        } catch (error) {
+            console.error(error)
+            toast.error("Message Not Sent", {
+                description: "An error occurred while sending message"
+            })
+        } finally {
+            setIsSubmitting(false)
+        }
     }
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
-
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-
-        // Simulate form submission
-        setTimeout(() => {
-            setIsSubmitting(false);
-            toast.success("Message sent successfully!", {
-                description: "Thank you for reaching out. I'll get back to you soon.",
-            });
-            setFormData({ name: '', email: '', subject: '', message: '' });
-        }, 2000);
-    };
 
     const contactMethods = [
         {
