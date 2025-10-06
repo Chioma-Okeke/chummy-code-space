@@ -1,6 +1,6 @@
 export const profileData = {
     name: "Chioma Princess Geraldine Okeke",
-    title: "Full-Stack Developer & Cybersecurity Specialist",
+    title: "Full-Stack Developer",
     email: "okekegeraldenne@gmail.com",
     phone: "602-740-7962",
     linkedin: "https://linkedin.com/in/okeke-chioma",
@@ -42,22 +42,22 @@ export const profileData = {
     },
 
     experience: [
+        // {
+        //     id: 1,
+        //     company: "Arizona State University",
+        //     role: "Web Application Developer Assistant",
+        //     duration: "Aug 2025 - Present",
+        //     location: "Tempe, AZ",
+        //     description:
+        //         "EdPlus is an enterprise unit at Arizona State University, focused on designing and delivering scalable digital teaching and learning models.",
+        //     achievements: [
+        //         "Developing and customizing Salesforce applications using Apex and Lightning Web Components (LWC) to support a global online learning community",
+        //         "Building reusable UI components and workflows in Salesforce Lightning, improving development efficiency, and maintaining consistency across platforms",
+        //         "Implemented comprehensive testing strategies for platform reliability",
+        //     ],
+        // },
         {
             id: 1,
-            company: "Arizona State University",
-            role: "Web Application Developer Assistant",
-            duration: "Aug 2025 - Present",
-            location: "Tempe, AZ",
-            description:
-                "EdPlus is an enterprise unit at Arizona State University, focused on designing and delivering scalable digital teaching and learning models.",
-            achievements: [
-                "Developing and customizing Salesforce applications using Apex and Lightning Web Components (LWC) to support a global online learning community",
-                "Building reusable UI components and workflows in Salesforce Lightning, improving development efficiency, and maintaining consistency across platforms",
-                "Implemented comprehensive testing strategies for platform reliability",
-            ],
-        },
-        {
-            id: 2,
             company: "Cavista Technology",
             role: "Software Engineer I",
             duration: "Jan 2023 - Aug 2025",
@@ -72,7 +72,7 @@ export const profileData = {
             ],
         },
         {
-            id: 3,
+            id: 2,
             company: "Huawei Technologies",
             role: "Software Integration Engineering Intern",
             duration: "May 2021 - Oct 2021",
