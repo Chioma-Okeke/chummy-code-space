@@ -60,7 +60,7 @@ export const profileData = {
             id: 1,
             company: "Cavista Technology",
             role: "Software Engineer I",
-            duration: "Jan 2023 - Aug 2025",
+            duration: "Mar 2023 - Aug 2025",
             location: "Lagos, Nigeria",
             description:
                 "Cavista is a global partner of Axxess, developing scalable web applications and enhancing usability for enterprise-level healthcare technology solutions.",
