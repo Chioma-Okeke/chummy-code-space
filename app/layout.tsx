@@ -38,8 +38,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_NG',
     url: 'https://chummy-code-space.vercel.app/',
-    siteName: 'Tolce Learning Hub',
-    title: 'Tolce Learning Hub',
+    siteName: 'Chioma Okeke',
+    title: 'Chioma Okeke',
     description:
       "Chummy's code space. Chioma Okeke is a Full-stack Software Engineer focused on building inclusive and secured software applications. Open to learn more about her journey",
     images: [
