@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Chioma Okeke",
-  description: "Chummy's code space. Chioma Okeke is a Full-stack Software Engineer focused on building inclusive and secured software applications.",
+  description: "Welcome to Chummy’s Code Space! I am Chioma Okeke, a Full-Stack Engineer creating accessible and secure web applications that blend innovation, usability, and trust.",
   authors: [
     {
       name: "Chioma Okeke",
@@ -31,23 +31,34 @@ export const metadata: Metadata = {
     'Next.js',
     "JavaScript",
     "TypeScript",
+    "Python",
+    "Django",
+    "Node.js",
+    "Express.js",
+    "RESTful APIs",
+    "GraphQL",
+    "SQL",
+    "C++",
+    "MongoDB",
+    "Web Development",
+    "Responsive Design",
     "Object-oriented programming",
     "Data Structure and Algorithm"
   ],
   openGraph: {
     type: 'website',
-    locale: 'en_NG',
+    locale: 'en_US',
     url: 'https://chummy-code-space.vercel.app/',
     siteName: 'Chioma Okeke',
     title: 'Chioma Okeke',
     description:
-      "Chummy's code space. Chioma Okeke is a Full-stack Software Engineer focused on building inclusive and secured software applications. Open to learn more about her journey",
+      "Welcome to Chummy’s Code Space! I am Chioma Okeke, a Full-Stack Engineer creating accessible and secure web applications that blend innovation, usability, and trust.",
     images: [
       {
         url: "https://res.cloudinary.com/djrp3aaq9/image/upload/v1758915248/WhatsApp_Image_2025-09-13_at_00.35.40_6d6eeac2_pndl8i.jpg",
         width: 1200,
         height: 630,
-        alt: 'Chioma Okeke',
+        alt: 'Chioma Okeke Banner Image',
       },
     ],
   },

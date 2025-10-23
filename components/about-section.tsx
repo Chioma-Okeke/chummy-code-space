@@ -30,10 +30,12 @@ const AboutSection = () => {
                                 <p className="text-gray-600 leading-relaxed mb-6">
                                     {profileData.about.summary}
                                 </p>
-                                <p className="text-gray-600 leading-relaxed">
-                                    My journey began in Nigeria where I earned my Bachelor&apos;s degree in Computer Engineering from Covenant University
-                                    with a 4.67/5.0 GPA. Today, I&apos;m pursuing my Master&apos;s in Computer Science with a focus on Systems and Software Security at
-                                    Arizona State University while working as a Web Application Developer Assistant.
+                                <p className="text-gray-600 leading-relaxed mb-6">
+                                    The journey began in Nigeria with a Bachelor’s degree in Computer Engineering from Covenant University, where a curiosity for how technology can solve real problems evolved into a drive to create purposeful software.
+                                    Now pursuing an M.S. in Computer Science at Arizona State University, with a focus on Systems and Software Security, while contributing as a Web Application Developer Assistant at EdPlus.
+                                </p>
+                                <p className="text-gray-600 leading-relaxed mb-6">
+                                    This role provides the opportunity to blend academic growth with hands-on experience, strengthening skills in developing robust systems, improving application reliability, and integrating secure engineering principles into every layer of development.
                                 </p>
                             </div>
 

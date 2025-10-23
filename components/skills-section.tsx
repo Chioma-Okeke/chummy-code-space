@@ -131,7 +131,7 @@ const SkillsSection = () => {
                     </Tabs>
 
                     {/* Skills Summary */}
-                    <div className="mt-12 grid md:grid-cols-3 gap-6">
+                    {/* <div className="mt-12 grid md:grid-cols-3 gap-6">
                         <Card className="p-6 text-center bg-gradient-to-br from-purple-600 to-purple-700 text-white">
                             <h4 className="text-2xl font-bold mb-2">2+</h4>
                             <p className="text-purple-100">Years of Programming</p>
@@ -144,7 +144,7 @@ const SkillsSection = () => {
                             <h4 className="text-2xl font-bold mb-2">3+</h4>
                             <p className="text-blue-100">Projects Delivered</p>
                         </Card>
-                    </div>
+                    </div> */}
 
                     {/* Skill Philosophy */}
                     <Card className="mt-8 p-6 bg-white border-l-4 border-purple-400">

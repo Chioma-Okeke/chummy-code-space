@@ -253,9 +253,9 @@ const ContactSection = () => {
                                     <div>
                                         <h4 className="font-semibold text-gray-900 mb-2">Location</h4>
                                         <p className="text-gray-700">{profileData.location}</p>
-                                        <p className="text-gray-600 text-sm mt-2">
+                                        {/* <p className="text-gray-600 text-sm mt-2">
                                             Open to remote work and relocation opportunities
-                                        </p>
+                                        </p> */}
                                     </div>
                                 </div>
                             </Card>
@@ -266,15 +266,15 @@ const ContactSection = () => {
                                 <div className="space-y-3">
                                     <div className="flex items-center">
                                         <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                                        <span className="text-gray-700 text-sm">Strong technical skills with business acumen</span>
+                                        <span className="text-gray-700 text-sm">Bridge technology and impact by aligning strong technical execution with real business goals to build scalable, user-centered solutions</span>
                                     </div>
                                     <div className="flex items-center">
                                         <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                                        <span className="text-gray-700 text-sm">Proven track record of delivering results</span>
+                                        <span className="text-gray-700 text-sm">Demonstrated record of delivering production-grade web applications that enhance performance, usability, and reliability.</span>
                                     </div>
                                     <div className="flex items-center">
                                         <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                                        <span className="text-gray-700 text-sm">Passionate about continuous learning</span>
+                                        <span className="text-gray-700 text-sm">Passionate about continuous learning and exploring emerging technologies and security practices to create innovative, future-ready products.</span>
                                     </div>
                                 </div>
                             </Card>

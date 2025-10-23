@@ -8,10 +8,11 @@ export const profileData = {
     location: "Tempe, Arizona",
     profileImage:
         "https://res.cloudinary.com/djrp3aaq9/image/upload/v1758915248/WhatsApp_Image_2025-09-13_at_00.35.40_6d6eeac2_pndl8i.jpg",
+    resumeUrl: "/chioma_okeke_resume.pdf",
 
     about: {
         summary:
-            "Passionate Full-Stack Developer with expertise in cybersecurity and a proven track record of delivering scalable enterprise solutions. Currently pursuing M.S. in Computer Science at Arizona State University while making impactful contributions at EdPlus, Arizona State University.",
+            "A dedicated Full-Stack Developer passionate about building secure, scalable, and user-focused applications.",
         highlights: [
             "Awarded the highly competitive Mastercard Foundation Scholarship, selected from a pool of 6,000+ applicants for academic excellence and leadership potential",
             "Spearheaded various frontend development projects using React and Next.js, optimizing rendering performance and reducing page load times by 20%, which contributed to a 30% boost in user engagement.",
@@ -42,22 +43,21 @@ export const profileData = {
     },
 
     experience: [
-        // {
-        //     id: 1,
-        //     company: "Arizona State University",
-        //     role: "Web Application Developer Assistant",
-        //     duration: "Aug 2025 - Present",
-        //     location: "Tempe, AZ",
-        //     description:
-        //         "EdPlus is an enterprise unit at Arizona State University, focused on designing and delivering scalable digital teaching and learning models.",
-        //     achievements: [
-        //         "Developing and customizing Salesforce applications using Apex and Lightning Web Components (LWC) to support a global online learning community",
-        //         "Building reusable UI components and workflows in Salesforce Lightning, improving development efficiency, and maintaining consistency across platforms",
-        //         "Implemented comprehensive testing strategies for platform reliability",
-        //     ],
-        // },
         {
             id: 1,
+            company: "Arizona State University",
+            role: "Web Application Developer Assistant",
+            duration: "Aug 2025 - Present",
+            location: "Tempe, AZ",
+            description:
+                "EdPlus is an enterprise unit at Arizona State University, focused on designing and delivering scalable digital teaching and learning models.",
+            achievements: [
+                "Developing and extending modular front-end components and backend logic in Salesforce using Apex and Lightning Web Components (LWC), applying core software engineering principles within a large-scale cloud platform",
+                "Improving platform reliability by implementing automated Jest test suites covering 85% of critical components, which reduced regression-related incidents by 30% and accelerated feature release cycles by 20%",
+            ],
+        },
+        {
+            id: 2,
             company: "Cavista Technology",
             role: "Software Engineer I",
             duration: "Mar 2023 - Aug 2025",
@@ -65,14 +65,12 @@ export const profileData = {
             description:
                 "Cavista is a global partner of Axxess, developing scalable web applications and enhancing usability for enterprise-level healthcare technology solutions.",
             achievements: [
-                "Led frontend development of a key project in the absence of a senior engineer, ensuring on-time delivery with high quality.",
-                "Designed reusable UI components improving development speed by 15%",
-                "Identified and fixed critical usability issues, reducing user drop-off during core workflows by 40%",
-                "Improved application stability by 15% through effective debugging and performance optimization",
+                "Built a form-to-model workflow using Aurelia + TypeScript that passed structured inputs from the frontend to the backend, enabling auto-generated print-ready clinical views and reducing manual documentation",
+                "Designed and shipped a dynamic content management feature that allowed users to rearrange page sections to fit their workflow, improving usability and reducing support requests by 20%",
             ],
         },
         {
-            id: 2,
+            id: 3,
             company: "Huawei Technologies",
             role: "Software Integration Engineering Intern",
             duration: "May 2021 - Oct 2021",
@@ -80,9 +78,8 @@ export const profileData = {
             description:
                 "Huawei is a leading global Information and Communications Technology (ICT) infrastructure provider and smart device provider.",
             achievements: [
-                "Applied JavaScript for web scripting, leveraged SQL for data queries and manipulation, and seamlessly visualized the Key Performance Indicators of 4 major Internet Service Providers in Nigeria",
-                "Introduced a standardized design documentation framework, covering all implementation steps, resulting in a 10% improvement in workforce productivity by enabling efficient knowledge transfer and accelerated onboarding of new team members",
-                "Supported knowledge-sharing sessions enhancing team collaboration",
+                "Created automated dashboards using HTML, CSS, and JavaScript to visualize KPIs for 4 major Internet Service Providers (ISPs), cutting manual reporting by 30% and accelerating network anomaly detection",
+                "Assisted in onboarding new interns, guiding them through workflows and documentation to reduce ramp-up time and ease team integration",
             ],
         },
     ],
@@ -110,6 +107,28 @@ export const profileData = {
             image: "https://res.cloudinary.com/djrp3aaq9/image/upload/v1758952452/frugal-flyer-VbdUnqoe5UU-unsplash_ocs53o.jpg",
             demoUrl: "",
             githubUrl: "https://github.com/Chioma-Okeke/BudgetIt",
+            date: "Sept 2025 – Present",
+        },
+        {
+            id: 1,
+            title: "Personal Budgeting Application (In Progress)",
+            description:
+                "Designed and developed a responsive cosmetics brand website to strengthen Veetgold’s digital presence and showcase its product line, enhancing customer trust and brand engagement.",
+            technologies: [
+                "Next.js",
+                "Tailwind CSS",
+                "TypeScript",
+                "Framer Motion",
+                "Vercel",
+            ],
+            achievements: [
+                "Built reusable, performance-optimized Next.js components with clean architecture and accessibility best practices",
+                "Implemented a fully responsive layout with smooth animations and optimized SEO for faster load and higher visibility",
+                "Enhanced brand credibility by improving mobile user experience and reducing bounce rate through modern UI design",
+            ],
+            image: "https://res.cloudinary.com/djrp3aaq9/image/upload/v1751229984/logo_ae8tzv.webp",
+            demoUrl: "https://veetgold-official.vercel.app/",
+            githubUrl: "https://github.com/Chioma-Okeke/veetgold-official",
             date: "Sept 2025 – Present",
         },
         {

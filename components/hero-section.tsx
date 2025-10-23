@@ -30,6 +30,15 @@ const HeroSection = () => {
         }
     };
 
+    const handleResumeDownload = () => {
+        const link = document.createElement('a');
+        link.href = profileData.resumeUrl;
+        link.download = 'Chioma-Okeke-Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
             {/* Animated Background Elements */}
@@ -86,6 +95,7 @@ const HeroSection = () => {
                             </Button>
 
                             <Button
+                                onClick={handleResumeDownload}
                                 variant="outline"
                                 size="lg"
                                 className="border-purple-300 text-purple-700 hover:bg-purple-50 px-8 py-3 rounded-full transition-all duration-300"

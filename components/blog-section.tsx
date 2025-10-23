@@ -36,6 +36,7 @@ const BlogSection = () => {
                             </div>
                             <Link
                                 href="https://chummygeraldine.hashnode.dev/"
+                                target='_blank'
                                 className="bg-white/10 border-white/30 text-white hover:bg-white/20 px-6 py-2 rounded-full backdrop-blur-sm flex items-center transition-all duration-300 ease-in-out"
                             >
                                 Visit My Blog
